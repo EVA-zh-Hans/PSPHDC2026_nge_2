@@ -648,46 +648,49 @@ The three modules coexist in the PSP's 32 MB user memory. The firmware loads EBO
 
 <div class="text-slate-500 mt-1 text-lg">The runtime patches the game image <b>before</b> the game's code ever runs</div>
 
-<div class="grid grid-cols-[1.05fr_0.95fr] gap-10 mt-5 items-start">
+<div class="flex items-stretch gap-2 mt-6">
 
-<div class="space-y-2 text-[0.95rem]">
-
-<div class="flex items-start gap-3">
-<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">1</div>
-<div><b>Firmware boots EBOOT.BIN</b> — the loader, not the game, becomes the first user module at 0x08804000.</div>
+<div class="flex-1 rounded-xl border-2 border-[#3D8DFF] bg-[#EEF5FF] px-3 py-2">
+<div class="w-7 h-7 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-xs">1</div>
+<div class="mt-2 font-bold leading-tight text-[0.95rem]">Loader boots</div>
+<div class="mt-0.5 text-[0.8rem] text-slate-600 leading-snug">at 0x08804000.</div>
 </div>
 
-<div class="text-center text-slate-300 leading-none">↓</div>
+<div class="text-2xl text-slate-300 self-center shrink-0">→</div>
 
-<div class="flex items-start gap-3">
-<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">2</div>
-<div><b>Loader UI</b> — start menu with debug toggles, then the contributor screen (<span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">metadata.raw</span>).</div>
+<div class="flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2">
+<div class="w-7 h-7 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-xs">2</div>
+<div class="mt-2 font-bold leading-tight text-[0.95rem]">Loader UI</div>
+<div class="mt-0.5 text-[0.8rem] text-slate-600 leading-snug">Start menu, debug toggles, contributor screen.</div>
 </div>
 
-<div class="text-center text-slate-300 leading-none">↓</div>
+<div class="text-2xl text-slate-300 self-center shrink-0">→</div>
 
-<div class="flex items-start gap-3">
-<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">3</div>
-<div><b>Load both modules</b> — <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">BOOT.BIN</span> (game) then <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">EVA2RT.PRX</span> (runtime) are mapped into free RAM; neither runs yet.</div>
+<div class="flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2">
+<div class="w-7 h-7 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-xs">3</div>
+<div class="mt-2 font-bold leading-tight text-[0.95rem]">Load both modules</div>
+<div class="mt-0.5 text-[0.8rem] text-slate-600 leading-snug"><span class="font-mono text-[0.85em] bg-slate-100 px-1 rounded">BOOT.BIN</span> + <span class="font-mono text-[0.85em] bg-slate-100 px-1 rounded">EVA2RT.PRX</span></div>
 </div>
 
-<div class="text-center text-slate-300 leading-none">↓</div>
+<div class="text-2xl text-slate-300 self-center shrink-0">→</div>
 
-<div class="flex items-start gap-3">
-<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">4</div>
-<div><b>Runtime boots first</b> — receives <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">{boot_mid, flags}</span>, queries the game's base, installs every patch into the stopped game image, flushes caches.</div>
+<div class="flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2">
+<div class="w-7 h-7 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-xs">4</div>
+<div class="mt-2 font-bold leading-tight text-[0.95rem]">Runtime boots first</div>
+<div class="mt-0.5 text-[0.8rem] text-slate-600 leading-snug">Installs patches</div>
 </div>
 
-<div class="text-center text-slate-300 leading-none">↓</div>
+<div class="text-2xl text-slate-300 self-center shrink-0">→</div>
 
-<div class="flex items-start gap-3">
-<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">5</div>
-<div><b>Game boots</b> — the loader starts the patched game; the runtime stays resident for hooks.</div>
+<div class="flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2">
+<div class="w-7 h-7 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-xs">5</div>
+<div class="mt-2 font-bold leading-tight text-[0.95rem]">Game boots</div>
+<div class="mt-0.5 text-[0.8rem] text-slate-600 leading-snug">Patched</div>
 </div>
 
 </div>
 
-<div class="rounded-2xl border border-slate-200 bg-white/80 p-5">
+<div class="rounded-2xl border border-slate-200 bg-white/80 p-5 mt-6">
 
 <div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">The hand-off in code</div>
 
@@ -699,15 +702,8 @@ Eva2RuntimeStartArgs args = { <span class="text-amber-700">game</span>, flags };
 <span class="text-[#3D8DFF]">sceKernelStartModule(runtime, sizeof(args), &amp;args, ...)</span>; <span class="text-slate-500">// patches land here</span>
 <span class="text-[#3D8DFF]">sceKernelStartModule(game, 0, NULL, ...)</span>;                <span class="text-slate-500">// game boots patched</span></code></pre>
 
-<pre class="rounded-lg bg-slate-50 border border-slate-200 p-3 text-[11px] leading-relaxed overflow-x-auto mt-3"><code class="font-mono"><span class="text-slate-500">// runtime_entry.c</span>
-sceKernelQueryModuleInfo(boot_mid, &amp;info);
-<span class="text-[#3D8DFF]">RuntimePatch_InstallAll(info.segmentaddr[0], flags)</span>;
-HookWrite_FlushCaches(); <span class="text-slate-500">// dcache write-back, icache invalidate</span></code></pre>
-
-<div class="mt-3 text-[12px] text-slate-500 leading-relaxed">
-Patches include: text encoding range, sentence/UTF-8, <span class="font-mono text-[0.85em] bg-slate-100 px-1 py-0.5 rounded">EBTRANS.BIN</span> injection, <span class="font-mono text-[0.85em] bg-slate-100 px-1 py-0.5 rounded">sceFont</span> replacement, save-data language, memory-text templates, staff roll, debug menus.
-</div>
-
+<div class="mt-3 text-[12px] text-slate-500">
+Patches: encoding, <span class="font-mono text-[0.85em] bg-slate-100 px-1 py-0.5 rounded">EBTRANS.BIN</span>, <span class="font-mono text-[0.85em] bg-slate-100 px-1 py-0.5 rounded">sceFont</span>, save data, memory text, staff roll, debug menus.
 </div>
 
 </div>
