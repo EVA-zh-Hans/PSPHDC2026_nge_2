@@ -593,9 +593,9 @@ Shinji told Pen Pen, 3 days ago, here, Misato became interested in Pen Pen's wor
 
 ---
 
-# Architecture: three modules, one RAM
+# Architecture: Loader + Runtime Plugin
 
-<div class="text-slate-500 mt-1 text-lg">A <b>loader</b> replaces the game's EBOOT, then pulls in the <b>game</b> and a <b>runtime plugin</b> — all three share the PSP's 32 MB of main RAM</div>
+<div class="text-slate-500 mt-1 text-lg">A <b>loader</b> replaces the game's EBOOT, then pulls in the <b>game</b> and a <b>runtime plugin</b>. <br></br>Inspired by <code>ZhenjianYang/ZeroAoVoice-PSP</code></div>
 
 <div class="grid grid-cols-[1fr_auto] gap-12 items-center mt-4">
 
