@@ -324,23 +324,20 @@ Walk through the five steps. The key insight: translators don't switch encodings
 
 <div class="flex items-start gap-3">
 <span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
-<span>A <b>RPG × raising sim × dating sim</b> hybrid that replays the series' plot from many angles</span>
+<span><b>Fully Voiced</b> with <b>37,000</b> lines of dialogue</span>
 </div>
 
 <div class="flex items-start gap-3">
 <span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
-<span>Play as <b>Shinji, Rei, Asuka</b> and other characters — dialogue choices shape relationships and story branches</span>
-</div>
-
-<div class="flex items-start gap-3">
-<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
-<span>A <b>“GM” AI</b> directed by Hideaki Anno drives events and enemy encounters</span>
+<span>Play as <b>Shinji, Rei, Asuka</b> and other characters. Choices shape relationships and story branches</span>
 </div>
 
 <div class="flex items-start gap-3">
 <span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
 <span>3D locations and battles, with 2D event scenes and character portraits</span>
 </div>
+
+It's basically the definitive Evangelion game.
 
 </div>
 
