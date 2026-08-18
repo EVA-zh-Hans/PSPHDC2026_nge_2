@@ -495,11 +495,11 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <div class="rounded-xl border border-slate-200 bg-white p-4">
 <div class="text-xs font-semibold text-slate-700 mb-2">Japanese: SOV fits the slots</div>
 <div class="flex flex-wrap justify-center gap-1.5">
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-blue-100 border-blue-400 text-blue-800 font-mono text-sm">シンジ</span><span class="text-[11px] text-slate-500 mt-1">Shinji</span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-slate-100 border-slate-300 text-slate-600 font-mono text-sm">が</span><span class="text-[11px] text-slate-500 mt-1"></span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-amber-100 border-amber-400 text-amber-800 font-mono text-sm">自分</span><span class="text-[11px] text-slate-500 mt-1">myself</span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-slate-100 border-slate-300 text-slate-600 font-mono text-sm">を</span><span class="text-[11px] text-slate-500 mt-1"></span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-emerald-100 border-emerald-400 text-emerald-800 font-mono text-sm">強く抱きしめた</span><span class="text-[11px] text-slate-500 mt-1">hugged tightly</span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">shinji</span><span class="px-2 py-1 rounded border-2 bg-blue-100 border-blue-400 text-blue-800 font-mono text-sm mt-1">シンジ</span><span class="text-[11px] text-slate-500 mt-1">Shinji</span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">ga</span><span class="px-2 py-1 rounded border-2 bg-slate-100 border-slate-300 text-slate-600 font-mono text-sm mt-1">が</span><span class="text-[11px] text-slate-500 mt-1"></span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">jibun</span><span class="px-2 py-1 rounded border-2 bg-amber-100 border-amber-400 text-amber-800 font-mono text-sm mt-1">自分</span><span class="text-[11px] text-slate-500 mt-1">myself</span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">o</span><span class="px-2 py-1 rounded border-2 bg-slate-100 border-slate-300 text-slate-600 font-mono text-sm mt-1">を</span><span class="text-[11px] text-slate-500 mt-1"></span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">tsuyoku dakishimeta</span><span class="px-2 py-1 rounded border-2 bg-emerald-100 border-emerald-400 text-emerald-800 font-mono text-sm mt-1">強く抱きしめた</span><span class="text-[11px] text-slate-500 mt-1">hugged tightly</span></div>
 </div>
 <div class="text-xs font-semibold text-slate-700 mt-3 mb-2">What the game fills in</div>
 <div class="flex flex-wrap justify-center gap-1.5">
@@ -513,10 +513,10 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <div class="rounded-xl border border-slate-200 bg-white p-4">
 <div class="text-xs font-semibold text-slate-700 mb-2">English: SVO + preposition breaks the slots</div>
 <div class="flex flex-wrap justify-center gap-1.5">
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-blue-100 border-blue-400 text-blue-800 font-mono text-sm">ペンペン</span><span class="text-[11px] text-slate-500 mt-1">Pen Pen</span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-slate-100 border-slate-300 text-slate-600 font-mono text-sm">が</span><span class="text-[11px] text-slate-500 mt-1"></span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-amber-100 border-amber-400 text-amber-800 font-mono text-sm">自分</span><span class="text-[11px] text-slate-500 mt-1">myself</span></div>
-<div class="flex flex-col items-center"><span class="px-2 py-1 rounded border-2 bg-emerald-100 border-emerald-400 text-emerald-800 font-mono text-sm">に、たわいもない話をした</span><span class="text-[11px] text-slate-500 mt-1">talked about trivial things</span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">penpen</span><span class="px-2 py-1 rounded border-2 bg-blue-100 border-blue-400 text-blue-800 font-mono text-sm mt-1">ペンペン</span><span class="text-[11px] text-slate-500 mt-1">Pen Pen</span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">ga</span><span class="px-2 py-1 rounded border-2 bg-slate-100 border-slate-300 text-slate-600 font-mono text-sm mt-1">が</span><span class="text-[11px] text-slate-500 mt-1"></span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">jibun</span><span class="px-2 py-1 rounded border-2 bg-amber-100 border-amber-400 text-amber-800 font-mono text-sm mt-1">自分</span><span class="text-[11px] text-slate-500 mt-1">myself</span></div>
+<div class="flex flex-col items-center"><span class="px-1.5 py-0.5 rounded border border-dashed border-slate-300 text-slate-400 font-mono text-xs">ni, tawainai hanashi o shita</span><span class="px-2 py-1 rounded border-2 bg-emerald-100 border-emerald-400 text-emerald-800 font-mono text-sm mt-1">に、たわいもない話をした</span><span class="text-[11px] text-slate-500 mt-1">talked about trivial things</span></div>
 </div>
 <div class="text-xs font-semibold text-slate-700 mt-3 mb-2">What the game fills in</div>
 <div class="flex flex-wrap justify-center gap-1.5">
