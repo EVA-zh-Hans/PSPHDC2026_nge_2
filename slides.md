@@ -79,13 +79,15 @@ class: text-center
 
 <div class="flex flex-col h-full justify-center max-w-6xl mx-auto w-full">
 
-# Memory: same meaning, different bytes
+# Challenges
+
+In English translations, the problem usually lies in **Memory**.
 
 <div class="flex flex-col gap-9 mt-8">
 
-<!-- 中文 -->
+<!-- Chinese -->
 <div class="flex items-center gap-5">
-<span class="w-20 shrink-0 text-xl font-semibold text-slate-700">中文</span>
+<span class="w-20 shrink-0 text-xl font-semibold text-slate-700">Chinese</span>
 <div class="flex gap-1.5">
 <div class="flex flex-col items-center">
 <div class="w-12 h-14 rounded-lg border-2 border-[#3D8DFF] bg-white flex items-center justify-center text-2xl font-semibold text-slate-800">我</div>
@@ -104,9 +106,9 @@ class: text-center
 <span class="px-4 py-1.5 rounded-full bg-[#3D8DFF] text-white text-xl font-bold">6 bytes</span>
 </div>
 
-<!-- 日本語 -->
+<!-- Japanese -->
 <div class="flex items-center gap-5">
-<span class="w-20 shrink-0 text-xl font-semibold text-slate-700">日本語</span>
+<span class="w-20 shrink-0 text-xl font-semibold text-slate-700">Japanese</span>
 <div class="flex gap-1.5">
 <div class="flex flex-col items-center">
 <div class="w-12 h-14 rounded-lg border-2 border-[#3D8DFF] bg-white flex items-center justify-center text-2xl font-semibold text-slate-800">水</div>
@@ -192,13 +194,13 @@ class: text-center
 
 </div>
 
-<div class="mt-8 text-center text-lg text-slate-500">One box per character, one byte count per cell — CJK says it in 2-byte glyphs, English pays per letter.</div>
+<div class="mt-8 text-center text-lg text-slate-500">Avoiding overflow needs a lot of remapping on memory layout</div>
 
 </div>
 
 ---
 
-# The real bottleneck: encoding and fonts
+# Challenges: Encoding and Fonts
 
 <div class="grid grid-cols-2 gap-10 items-stretch mt-4">
 
