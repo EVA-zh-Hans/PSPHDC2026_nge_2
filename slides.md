@@ -714,6 +714,20 @@ The order matters: the runtime starts before the game, so it can rewrite the gam
 
 ---
 
+# Demo
+
+The project is open-source and still on-going.
+
+| Role | Members |
+| --- | --- |
+| Coordination | main_void, hanDragon20 |
+| Translation | pan1927412, hanDragon20, Frykte, Liana384, blabubble, Belfraw, Tianying.exe, カロモリモキナエ, Asuka, mel, Laolv000, zxlraw, yokuse |
+| Proofreading | hanDragon20, Frykte, blabubble, Belfraw, カロモリモキナエ, Asuka, mel, Laolv000 |
+| Programming | main_void |
+| Art | main_void, Belfraw, Katsumi_Mole |
+
+---
+
 # Milestones in Reverse Engineering the Game
 
 <!-- <div class="text-slate-500 mt-1 text-lg">One EvaGeeks thread on this game · 741 posts · 2006 – 2026</div> -->
