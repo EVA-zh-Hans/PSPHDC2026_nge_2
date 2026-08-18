@@ -584,8 +584,11 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 
 <div class="text-slate-500 mt-1 text-lg">The rebuilt templates produce grammatical Chinese from the same memory events</div>
 
-<div class="flex justify-center mt-6">
-<img src="/wordorder/effect.png" class="h-72 rounded-xl border border-slate-200 shadow-md" />
+<div class="relative flex justify-center mt-5">
+<img src="/wordorder/effect.png" class="h-80 rounded-xl border border-slate-200 shadow-md" />
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[93%] rounded-lg bg-[#153A6E]/90 px-4 py-2 text-center text-sm text-white leading-snug">
+Shinji told Pen Pen, 3 days ago, here, Misato became interested in Pen Pen's words.
+</div>
 </div>
 
 ---
