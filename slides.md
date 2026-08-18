@@ -373,6 +373,54 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 
 ---
 
+# Custom Shift-JIS → UTF-16 mapping
+
+<div class="text-slate-500 mt-1 text-lg">Borrowing unused code points so Chinese and Japanese can coexist</div>
+
+<div class="grid grid-cols-2 gap-10 items-center mt-5">
+
+<div class="space-y-5 text-[1rem] text-slate-600 leading-relaxed">
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>Shift-JIS is <b>variable-length</b> — the lead byte decides whether a character takes <b>1 byte or 2 bytes</b>.</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>We customized the Shift-JIS → UTF-16 parsing so ranges normally read as <b>single-byte</b> can also carry <b>two-byte sequences</b> — borrowing unused code points to store Chinese characters.</span>
+</div>
+
+</div>
+
+<div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+<video src="/SJIS_Hack_Visual.mp4" controls class="w-full rounded-lg"></video>
+<div class="text-center text-xs text-slate-400 mt-2">Demo · Chinese text rendered with the custom mapping</div>
+</div>
+
+</div>
+
+<div class="grid grid-cols-3 gap-4 mt-5">
+
+<div class="rounded-xl border border-slate-200 bg-white p-3 text-center">
+<div class="text-sm font-bold text-slate-800 mb-1">Japanese untouched</div>
+<div class="text-[0.85rem] text-slate-500">Original double-byte code points keep working</div>
+</div>
+
+<div class="rounded-xl border border-slate-200 bg-white p-3 text-center">
+<div class="text-sm font-bold text-slate-800 mb-1">Unused region reused</div>
+<div class="text-[0.85rem] text-slate-500">Only part of the half-width katakana area — unused by this game</div>
+</div>
+
+<div class="rounded-xl border border-slate-200 bg-white p-3 text-center">
+<div class="text-sm font-bold text-slate-800 mb-1">No conflicts</div>
+<div class="text-[0.85rem] text-slate-500">Untranslated Japanese and translated Chinese coexist</div>
+</div>
+
+</div>
+
+---
+
 # Milestones in Reverse Engineering the Game
 
 <!-- <div class="text-slate-500 mt-1 text-lg">One EvaGeeks thread on this game · 741 posts · 2006 – 2026</div> -->
