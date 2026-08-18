@@ -301,6 +301,9 @@ Reuse the Shift-JIS encoding byte scheme.
 
 </div>
 
+The Glyphs are usually stored as Texture or Bitmap in the game resources.
+
 <!--
 Walk through the five steps. The key insight: translators don't switch encodings — they rebuild the byte-to-glyph mapping inside the existing Shift JIS scheme and swap the font glyphs, so the game engine keeps working unchanged.
 -->
+
