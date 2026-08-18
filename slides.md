@@ -18,6 +18,8 @@ comark: true
 
 # Neon Genesis Evangelion 2 Chinese Localization
 
+《新世纪福音战士2：被创造的世界》汉化
+
 xeonliux
 
 <!--
