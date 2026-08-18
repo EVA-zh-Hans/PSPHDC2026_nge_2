@@ -383,7 +383,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <div class="grid grid-cols-2 gap-x-12 mt-6">
 
 <div>
-<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">The EvaGeeks thread · 2010 –</div>
+<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">The EvaGeeks thread · 2006 –</div>
 
 <div class="flex gap-3">
 <div class="flex flex-col items-center">
@@ -391,17 +391,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2010</span><span class="text-slate-600">First English-menu proof-of-concept, patched on a real PSP</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2011</span><span class="text-slate-600">Text files located in the ISO; Shift-JIS dumps converted to UTF-8</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2010</span><span class="text-slate-600">English-menu patch proof-of-concept on a real PSP</span></div>
 </div>
 </div>
 
@@ -411,7 +401,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018</span><span class="text-slate-600">deeRez starts RE — HAR unpacker, decompressor, EVS scripts, real-time patches; repo <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">nge_2_re</span></span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2011</span><span class="text-slate-600">Text files located in the ISO — <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">imtext.bin</span> / <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">btimtext.bin</span> (Shift-JIS → UTF-8)</span></div>
 </div>
 </div>
 
@@ -421,7 +411,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018–19</span><span class="text-slate-600">Reichu &amp; Kira BB Yamato translate data tables; subtitle images dumped</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018-01</span><span class="text-slate-600">HAR archives unpacked (<span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">hgar.py</span>); HGPT image conversion; game's own decompression run in a mini PSP interpreter</span></div>
 </div>
 </div>
 
@@ -431,18 +421,18 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2020–23</span><span class="text-slate-600">Machine translation, fonts, compression; real-hardware compatibility</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018-02</span><span class="text-slate-600">EVS scripts &amp; data tables mapped; file replacement working</span></div>
 </div>
 </div>
 
-<!-- <div class="flex gap-3">
+<div class="flex gap-3">
 <div class="flex flex-col items-center">
 <span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
 </div>
 <div class="min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2026</span><span class="text-slate-600">The Chinese localization project appears in the thread</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2020</span><span class="text-slate-600">Compression identified as DEFLATE — compressor + decompressor complete</span></div>
 </div>
-</div> -->
+</div>
 
 </div>
 
@@ -455,7 +445,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-04</span><span class="text-slate-600">Research post on reversing the game; character-read &amp; encoding-conversion functions located</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-04→06</span><span class="text-slate-600">Encoding-conversion functions &amp; glyph table located</span></div>
 </div>
 </div>
 
@@ -465,7 +455,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-06</span><span class="text-slate-600">Glyph table found; Crowdin + DeepL machine translation; first test build on Bilibili</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-06→09</span><span class="text-slate-600">Crowdin + DeepL, then LLM-assisted machine translation</span></div>
 </div>
 </div>
 
@@ -475,7 +465,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2025-12</span><span class="text-slate-600">HGPT/HGAR images, TEXT &amp; BIND import/export; GUI tool</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2025</span><span class="text-slate-600">EBOOT loader; custom encoding implemented</span></div>
 </div>
 </div>
 
@@ -485,7 +475,17 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
 </div>
 <div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-01</span><span class="text-slate-600">Save-function hook switches language to Simplified Chinese; Qwen3-VL OCR</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-01→02</span><span class="text-slate-600">Qwen3-VL OCR for image text; contributor startup screen</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-06</span><span class="text-slate-600">Loader + runtime plugin architecture</span></div>
 </div>
 </div>
 
@@ -494,7 +494,7 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 <span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
 </div>
 <div class="min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-04→07</span><span class="text-slate-600">v1.0.0 → v2.1.0 betas; streaming cuts patch 150 MB → 10 MB</span></div>
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-06</span><span class="text-slate-600">Memory text localized at runtime — word-order patches</span></div>
 </div>
 </div>
 
@@ -503,5 +503,5 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 </div>
 
 <!--
-Two timelines. Left, the community thread: 2010 danxviii's English-menu proof-of-concept on real hardware; 2011 Hyper Shinchan locates the text files and dumps Shift-JIS to UTF-8; 2018 deeRez opens the nge_2_re repo and cracks HAR/EVS, with Reichu and Kira BB Yamato translating data; 2020-23 machine translation, fonts, compression and real-hardware work; 2026 the Chinese localization project appears in the thread. Right, this project: 2024-04 research post locating character-read/encoding functions; 2024-06 glyph table + Crowdin/DeepL MT + first Bilibili test build; 2025-12 HGPT/HGAR/TEXT/BIND import-export + GUI; 2026-01 save hook forces Simplified Chinese + Qwen3-VL OCR; 2026-04 to 07 v1.0.0 → v2.1.0 releases, streaming cuts patch from 150 MB to 10 MB.
+Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu patch proof-of-concept; 2011 text files located in the ISO (imtext.bin / btimtext.bin), Shift-JIS → UTF-8; 2018-01 HAR archives unpacked (hgar.py), HGPT image conversion, and the game's own decompression run in a mini PSP interpreter; 2018-02 EVS scripts mapped and file replacement working; 2020 compression identified as DEFLATE, so compressor + decompressor both complete. Right, this project: 2024-04/06 encoding-conversion functions and the glyph table located; 2024-06/09 Crowdin + DeepL then LLM-assisted MT; 2025 EBOOT loader and custom encoding; 2026-01/02 Qwen3-VL OCR and the contributor startup screen; 2026-06 loader + runtime plugin architecture and runtime memory-text (word-order) patches.
 -->
