@@ -36,6 +36,47 @@ class: text-center
 
 ---
 
+<div class="flex flex-col h-full justify-center max-w-5xl mx-auto w-full">
+
+# The Chinese fan-translation scene
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div class="rounded-2xl border-2 border-[#3D8DFF] bg-[#EEF5FF] p-8 text-center">
+<div class="text-6xl font-bold text-[#3D8DFF]">600+</div>
+<div class="mt-2 text-xl text-slate-700">PSP games fan-translated into Chinese</div>
+</div>
+
+<div class="rounded-2xl border-2 border-slate-200 bg-white p-8 text-center">
+<div class="text-6xl font-bold text-slate-400">57</div>
+<div class="mt-2 text-xl text-slate-600">English translations on romhacking.net</div>
+</div>
+
+</div>
+
+<div class="mt-8 space-y-3 text-lg text-slate-600">
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>Most appeared in the <b>2010s</b>, when the PSP was the most popular handheld in China</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>Most are based on <b>Japanese versions</b> of the games</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>With <b>LLMs</b>, more games are now being reverse-engineered and translated than ever before</span>
+</div>
+
+</div>
+
+</div>
+
+---
+
 <div class="flex flex-col h-full justify-center max-w-6xl mx-auto w-full">
 
 # Memory: same meaning, different bytes
