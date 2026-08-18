@@ -307,3 +307,69 @@ The Glyphs are usually stored as Texture or Bitmap in the game resources.
 Walk through the five steps. The key insight: translators don't switch encodings — they rebuild the byte-to-glyph mapping inside the existing Shift JIS scheme and swap the font glyphs, so the game engine keeps working unchanged.
 -->
 
+---
+
+# The Game
+
+<div class="text-slate-500 mt-1 text-lg">Neon Genesis Evangelion 2: Tsukurareshi Sekai -another cases-</div>
+
+<div class="grid grid-cols-[1.2fr_auto] gap-10 items-center mt-6 max-w-5xl mx-auto">
+
+<div class="space-y-3 text-lg text-slate-600">
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>PS2 2003, PSP 2006</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>A <b>RPG × raising sim × dating sim</b> hybrid that replays the series' plot from many angles</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>Play as <b>Shinji, Rei, Asuka</b> and other characters — dialogue choices shape relationships and story branches</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>A <b>“GM” AI</b> directed by Hideaki Anno drives events and enemy encounters</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>3D locations and battles, with 2D event scenes and character portraits</span>
+</div>
+
+</div>
+
+<div class="w-64 shrink-0 overflow-hidden rounded-lg border border-slate-300 bg-white shadow-md">
+
+<div class="bg-slate-50 border-b border-slate-200 flex items-center justify-center">
+<img src="/71176_front.jpg" alt="Neon Genesis Evangelion 2 PSP cover" class="h-48 object-contain" />
+</div>
+
+<div class="px-3 py-1 text-sm font-semibold text-slate-700">Neon Genesis Evangelion 2</div>
+
+<div class="px-3 py-1 text-sm">
+
+<div class="flex justify-between gap-3 py-0.5 border-b border-slate-100"><span class="text-slate-500 shrink-0">Platform</span><span class="text-slate-800 text-right">PSP</span></div>
+
+<div class="flex justify-between gap-3 py-0.5 border-b border-slate-100"><span class="text-slate-500 shrink-0">Developer</span><span class="text-slate-800 text-right">AlfaSystem</span></div>
+
+<div class="flex justify-between gap-3 py-0.5 border-b border-slate-100"><span class="text-slate-500 shrink-0">Publisher</span><span class="text-slate-800 text-right">Bandai</span></div>
+
+<div class="flex justify-between gap-3 py-0.5 border-b border-slate-100"><span class="text-slate-500 shrink-0">Release Date</span><span class="text-slate-800 text-right">2006-04-27 (JP)</span></div>
+
+<div class="flex justify-between gap-3 py-0.5"><span class="text-slate-500 shrink-0">Genre</span><span class="text-slate-800 text-right">SLG</span></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--
+This is the game the talk's reverse-engineering project targets: the PSP release (ULJS-00064) of Neon Genesis Evangelion 2: The Created World -Another Cases-. Sources: English Wikipedia, EvaGeeks wiki, Launchbox DB, GameSpot preview.
+-->
