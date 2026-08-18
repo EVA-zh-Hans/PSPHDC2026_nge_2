@@ -38,7 +38,7 @@ class: text-center
 
 <div class="flex flex-col h-full justify-center max-w-5xl mx-auto w-full">
 
-# The Chinese fan-translation scene
+# Chinese Fan Translation on PSP
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 
@@ -214,13 +214,17 @@ For **Chinese** translations, the core problems are **encoding** and **font**:
 
 </div>
 
-<div class="flex flex-col items-center justify-center gap-4">
+<div class="flex flex-col items-center justify-center gap-3">
 
-<div class="relative h-52 w-80">
+<div class="relative h-44 w-72">
 <div class="absolute left-0 top-1/2 -translate-y-1/2 w-44 h-44 rounded-full bg-[#6DCBF4]/60 flex flex-col items-center justify-center font-bold text-slate-800"><span>Shift JIS</span><span class="text-3xl">6,355</span></div>
 <div class="absolute right-0 top-1/2 -translate-y-1/2 w-44 h-44 rounded-full bg-[#3D8DFF]/50 flex flex-col items-center justify-center font-bold text-white"><span>GB2312</span><span class="text-3xl">6,763</span></div>
-<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-white border-2 border-slate-400 z-10 flex flex-col items-center justify-center text-center"><span class="text-2xl font-bold text-slate-800">3,331</span><span class="text-[10px] leading-tight text-slate-500">shared in Unicode</span></div>
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-white border-2 border-slate-400 z-10 flex flex-col items-center justify-center text-center"><span class="text-xl font-bold text-slate-800">3,331</span><span class="text-[10px] leading-tight text-slate-500">shared in Unicode</span></div>
 </div>
+
+<img src="/GB2312inSJIS.png" alt="GB2312-80 character map" class="block max-h-32 rounded-lg border border-slate-200 shadow-md" />
+
+<div class="text-center text-xs text-slate-400">GB2312-80 character map, White ones are not presented in Shift-JIS</div>
 
 <div class="text-sm text-slate-500 text-center max-w-xs">The characters a translation needs simply aren't in the Japanese encoding.</div>
 
