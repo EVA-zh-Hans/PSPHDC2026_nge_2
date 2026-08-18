@@ -869,9 +869,9 @@ Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu pat
 # Evangelion Games on PSP
 
 - **Done**: 
-  - [Koutetsu no Girlfriend 2nd Portable (2009)](https://github.com/EVA-zh-Hans/gos_2_re)
-  - [Tokubetsu-Hen Portable (2009)](https://github.com/EVA-zh-Hans/gos_2_re)
-  - [Secret of Evangelion Portable (2007)](https://github.com/EVA-zh-Hans/secret_of_eva)
-  - [Evangelion – Jo (2009)](https://github.com/EVA-zh-Hans/eva_jo_re)
+  - Koutetsu no Girlfriend 2nd Portable (2009): https://github.com/EVA-zh-Hans/gos_2_re
+  - Tokubetsu-Hen Portable (2009): https://github.com/EVA-zh-Hans/gos_2_re
+  - Secret of Evangelion Portable (2007): https://github.com/EVA-zh-Hans/secret_of_eva
+  - Evangelion – Jo (2009): https://github.com/EVA-zh-Hans/eva_jo_re
 - **Working**: 
-  - [Shinseiki Evangelion 2 – Another Cases (2006)](https://github.com/EVA-zh-Hans/nge_2_re)
+  - Shinseiki Evangelion 2 – Another Cases (2006): https://github.com/EVA-zh-Hans/nge_2_re
