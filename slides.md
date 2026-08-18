@@ -524,6 +524,15 @@ Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu pat
 -->
 
 ---
+layout: center
+class: text-center
+---
+
+<div class="text-[10rem] font-bold leading-none text-slate-800">#1</div>
+<div class="mt-10 text-3xl text-slate-500">Encoding and Font</div>
+
+
+---
 
 # The hook point: sceFont
 
@@ -618,6 +627,15 @@ Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu pat
 </div>
 
 ---
+layout: center
+class: text-center
+---
+
+<div class="text-[10rem] font-bold leading-none text-slate-800">#2</div>
+<div class="mt-10 text-3xl text-slate-500">Word Order</div>
+
+
+---
 
 # Background: the game's memory system
 
@@ -629,7 +647,7 @@ Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu pat
 <img src="/wordorder/memory-3.jpeg" class="flex-1 h-40 object-cover rounded-lg border border-slate-200 shadow-sm" />
 </div>
 
-<div class="mt-5 text-center text-lg text-slate-500">These sentences are composed from <b>fixed templates</b> — not written by hand</div>
+<div class="mt-5 text-center text-lg text-slate-500">These sentences are composed from <b>fixed templates</b></div>
 
 ---
 
@@ -742,6 +760,14 @@ Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu pat
 Shinji told Pen Pen, 3 days ago, here, Misato became interested in Pen Pen's words.
 </div>
 </div>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="text-[10rem] font-bold leading-none text-slate-800">#3</div>
+<div class="mt-10 text-3xl text-slate-500">Architecture</div>
 
 ---
 
