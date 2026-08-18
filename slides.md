@@ -2,7 +2,7 @@
 # try also 'default' to start simple
 theme: seriph
 # some information about your slides (markdown enabled)
-title: Chinese Fan Translation on PSP
+title: Neon Genesis Evangelion 2 Chinese Localization
 info: "Han Hua (汉化): the Chinese fan-localization scene on PSP — scale,
   encoding, and fonts."
 # apply UnoCSS classes to the current slide
@@ -16,11 +16,9 @@ transition: slide-left
 comark: true
 ---
 
-# Chinese Fan Translation on PSP
+# Neon Genesis Evangelion 2 Chinese Localization
 
-**汉化 (Han Hua)** — “Chinese-izing” a game
-
-More than 600 fan translations · one encoding problem
+xeonliux
 
 <!--
 Open with the scale of the scene: roughly 600 PSP games fan-translated into Chinese, versus 57 English translations on romhacking.net. Most came out of the 2010s, when the PSP was the most popular handheld in China, and most are based on Japanese releases. With LLMs, more games are now being reversed and translated than ever before.
