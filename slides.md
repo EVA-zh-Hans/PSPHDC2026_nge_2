@@ -920,13 +920,46 @@ The order matters: the runtime starts before the game, so it can rewrite the gam
 
 The project is open-source and still on-going.
 
-| Role | Members |
-| --- | --- |
-| Coordination | main_void, hanDragon20 |
-| Translation | pan1927412, hanDragon20, Frykte, Liana384, blabubble, Belfraw, Tianying.exe, カロモリモキナエ, Asuka, mel, Laolv000, zxlraw, yokuse |
-| Proofreading | hanDragon20, Frykte, blabubble, Belfraw, カロモリモキナエ, Asuka, mel, Laolv000 |
-| Programming | main_void |
-| Art | main_void, Belfraw, Katsumi_Mole |
+<div class="grid grid-cols-[minmax(0,1fr)_auto] gap-6 items-start mt-5">
+
+<div class="min-w-0">
+
+<table class="w-full border-collapse">
+<thead>
+<tr class="text-left border-b-2 border-slate-200">
+<th class="py-1.5 pr-4 font-semibold text-slate-700">Role</th>
+<th class="py-1.5 font-semibold text-slate-700">Members</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-slate-100 align-top">
+<td class="py-1.5 pr-4 whitespace-nowrap text-slate-500">Coordination</td>
+<td class="py-1.5 text-slate-800">main_void, hanDragon20</td>
+</tr>
+<tr class="border-b border-slate-100 align-top">
+<td class="py-1.5 pr-4 whitespace-nowrap text-slate-500">Translation</td>
+<td class="py-1.5 text-slate-800">pan1927412, hanDragon20, Frykte, Liana384, blabubble, Belfraw, Tianying.exe, カロモリモキナエ, Asuka, mel, Laolv000, zxlraw, yokuse</td>
+</tr>
+<tr class="border-b border-slate-100 align-top">
+<td class="py-1.5 pr-4 whitespace-nowrap text-slate-500">Proofreading</td>
+<td class="py-1.5 text-slate-800">hanDragon20, Frykte, blabubble, Belfraw, カロモリモキナエ, Asuka, mel, Laolv000</td>
+</tr>
+<tr class="border-b border-slate-100 align-top">
+<td class="py-1.5 pr-4 whitespace-nowrap text-slate-500">Programming</td>
+<td class="py-1.5 text-slate-800">main_void</td>
+</tr>
+<tr class="align-top">
+<td class="py-1.5 pr-4 whitespace-nowrap text-slate-500">Art</td>
+<td class="py-1.5 text-slate-800">main_void, Belfraw, Katsumi_Mole</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<video src="/demo.mp4" class="w-80 rounded-lg border border-slate-200 shadow-md" autoplay muted loop playsinline controls></video>
+
+</div>
 
 
 ---
