@@ -593,6 +593,131 @@ Shinji told Pen Pen, 3 days ago, here, Misato became interested in Pen Pen's wor
 
 ---
 
+# Architecture: three modules, one RAM
+
+<div class="text-slate-500 mt-1 text-lg">A <b>loader</b> replaces the game's EBOOT, then pulls in the <b>game</b> and a <b>runtime plugin</b> — all three share the PSP's 32 MB of main RAM</div>
+
+<div class="grid grid-cols-[1fr_auto] gap-12 items-center mt-4">
+
+<div class="space-y-4 max-w-md">
+<div class="flex items-start gap-2">
+<span class="w-3 h-3 mt-1.5 rounded-sm bg-[#3D8DFF] shrink-0"></span>
+<div><b>Loader · EBOOT.BIN</b><div class="text-slate-500 text-[12px]">first user module at 0x08804000 — menu, then loads the other two</div></div>
+</div>
+<div class="flex items-start gap-2">
+<span class="w-3 h-3 mt-1.5 rounded-sm bg-amber-400 shrink-0"></span>
+<div><b>Game · BOOT.BIN</b><div class="text-slate-500 text-[12px]">decrypted original EBOOT — loaded, patched, then started</div></div>
+</div>
+<div class="flex items-start gap-2">
+<span class="w-3 h-3 mt-1.5 rounded-sm bg-emerald-400 shrink-0"></span>
+<div><b>Runtime · EVA2RT.PRX</b><div class="text-slate-500 text-[12px]">resident patch engine — hooks, font, EBTRANS text</div></div>
+</div>
+<div class="text-[12px] text-slate-500 pt-1">Patch addresses are rebased at runtime: <span class="font-mono text-[0.9em] bg-slate-100 px-1.5 py-0.5 rounded">patch_addr = game_base + (IDA_addr − 0x08804000)</span></div>
+</div>
+
+<div class="flex gap-3 items-stretch">
+
+<div class="flex flex-col justify-between text-right font-mono text-[11px] text-slate-400 leading-none py-1">
+<span>0x09FFFFFF</span>
+<span>0x08800000</span>
+</div>
+
+<div class="w-16 h-72 flex flex-col overflow-hidden rounded-lg border-2 border-slate-300 shadow-sm">
+<div class="flex-1 bg-emerald-100 border-b-2 border-emerald-400 flex items-center justify-center font-mono text-[11px] font-bold text-emerald-800">EVA2RT</div>
+<div class="flex-1 bg-amber-100 border-b-2 border-amber-400 flex items-center justify-center font-mono text-[11px] font-bold text-amber-800">BOOT</div>
+<div class="h-14 bg-[#3D8DFF] flex items-center justify-center font-mono text-[11px] font-bold text-white">EBOOT</div>
+</div>
+
+<div class="flex flex-col text-left font-mono text-[11px] leading-none">
+<div class="flex-1 flex items-center"><span class="text-emerald-600">runtime · dynamic</span></div>
+<div class="flex-1 flex items-center"><span class="text-amber-600">game · dynamic</span></div>
+<div class="h-14 flex items-center"><span class="text-[#3D8DFF]">loader · 0x08804000</span></div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+The three modules coexist in the PSP's 32 MB user memory. The firmware loads EBOOT.BIN (the loader) first at 0x08804000; it replaces the original game's EBOOT in SYSDIR. The original EBOOT.BIN is decrypted and renamed BOOT.BIN, and the runtime is EVA2RT.PRX, both loaded into free RAM — so only the loader base is fixed. The runtime receives the game's module id, calls sceKernelQueryModuleInfo to get segmentaddr[0] as game_base, and converts every IDA-era address (from the 0x08804000 static base) into the real location with game_base + (addr − 0x08804000). The loader's menu framebuffers live in VRAM (0x04000000+), separate from main RAM; the runtime's font atlas and GB2312 tables are compiled-in C arrays.
+-->
+
+---
+
+# Startup order: loader → runtime → game
+
+<div class="text-slate-500 mt-1 text-lg">The runtime patches the game image <b>before</b> the game's code ever runs</div>
+
+<div class="grid grid-cols-[1.05fr_0.95fr] gap-10 mt-5 items-start">
+
+<div class="space-y-2 text-[0.95rem]">
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">1</div>
+<div><b>Firmware boots EBOOT.BIN</b> — the loader, not the game, becomes the first user module at 0x08804000.</div>
+</div>
+
+<div class="text-center text-slate-300 leading-none">↓</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">2</div>
+<div><b>Loader UI</b> — start menu with debug toggles, then the contributor screen (<span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">metadata.raw</span>).</div>
+</div>
+
+<div class="text-center text-slate-300 leading-none">↓</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">3</div>
+<div><b>Load both modules</b> — <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">BOOT.BIN</span> (game) then <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">EVA2RT.PRX</span> (runtime) are mapped into free RAM; neither runs yet.</div>
+</div>
+
+<div class="text-center text-slate-300 leading-none">↓</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">4</div>
+<div><b>Runtime boots first</b> — receives <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">{boot_mid, flags}</span>, queries the game's base, installs every patch into the stopped game image, flushes caches.</div>
+</div>
+
+<div class="text-center text-slate-300 leading-none">↓</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center text-sm">5</div>
+<div><b>Game boots</b> — the loader starts the patched game; the runtime stays resident for hooks.</div>
+</div>
+
+</div>
+
+<div class="rounded-2xl border border-slate-200 bg-white/80 p-5">
+
+<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">The hand-off in code</div>
+
+<pre class="rounded-lg bg-slate-50 border border-slate-200 p-3 text-[11px] leading-relaxed overflow-x-auto"><code class="font-mono"><span class="text-slate-500">// loader.c</span>
+<span class="text-slate-600">SceUID game</span> = sceKernelLoadModule(<span class="text-emerald-700">"disc0:/PSP_GAME/SYSDIR/BOOT.BIN"</span>, ...);
+<span class="text-slate-600">SceUID runtime</span> = sceKernelLoadModule(<span class="text-emerald-700">"disc0:/PSP_GAME/SYSDIR/EVA2RT.PRX"</span>, ...);
+
+Eva2RuntimeStartArgs args = { <span class="text-amber-700">game</span>, flags };
+<span class="text-[#3D8DFF]">sceKernelStartModule(runtime, sizeof(args), &amp;args, ...)</span>; <span class="text-slate-500">// patches land here</span>
+<span class="text-[#3D8DFF]">sceKernelStartModule(game, 0, NULL, ...)</span>;                <span class="text-slate-500">// game boots patched</span></code></pre>
+
+<pre class="rounded-lg bg-slate-50 border border-slate-200 p-3 text-[11px] leading-relaxed overflow-x-auto mt-3"><code class="font-mono"><span class="text-slate-500">// runtime_entry.c</span>
+sceKernelQueryModuleInfo(boot_mid, &amp;info);
+<span class="text-[#3D8DFF]">RuntimePatch_InstallAll(info.segmentaddr[0], flags)</span>;
+HookWrite_FlushCaches(); <span class="text-slate-500">// dcache write-back, icache invalidate</span></code></pre>
+
+<div class="mt-3 text-[12px] text-slate-500 leading-relaxed">
+Patches include: text encoding range, sentence/UTF-8, <span class="font-mono text-[0.85em] bg-slate-100 px-1 py-0.5 rounded">EBTRANS.BIN</span> injection, <span class="font-mono text-[0.85em] bg-slate-100 px-1 py-0.5 rounded">sceFont</span> replacement, save-data language, memory-text templates, staff roll, debug menus.
+</div>
+
+</div>
+
+</div>
+
+<!--
+The order matters: the runtime starts before the game, so it can rewrite the game's loaded-but-idle image. module_start receives the game's module id and flags, queries the module info to find the real base (segmentaddr[0]), installs every patch (each is a direct 32-bit store or a JAL/J rewrite via _sw), then HookWrite_FlushCaches does dcache write-back and icache invalidate so the running game sees consistent code. Only then does the loader start the game module. The runtime stays resident: hooks like sceFont text rendering, memory-text fill-ins, the staff roll and debug menus run from its code.
+-->
+
+---
+
 # Milestones in Reverse Engineering the Game
 
 <!-- <div class="text-slate-500 mt-1 text-lg">One EvaGeeks thread on this game · 741 posts · 2006 – 2026</div> -->
