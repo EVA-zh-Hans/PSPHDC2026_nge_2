@@ -373,6 +373,158 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 
 ---
 
+# Milestones in Reverse Engineering the Game
+
+<!-- <div class="text-slate-500 mt-1 text-lg">One EvaGeeks thread on this game · 741 posts · 2006 – 2026</div> -->
+
+<div class="grid grid-cols-2 gap-x-12 mt-6">
+
+<div>
+<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">The EvaGeeks thread · 2006 –</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2010</span><span class="text-slate-600">English-menu patch proof-of-concept on a real PSP</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2011</span><span class="text-slate-600">Text files located in the ISO — <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">imtext.bin</span> / <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">btimtext.bin</span> (Shift-JIS → UTF-8)</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-20 shrink-0 font-bold text-[#3D8DFF]">2018-01-07</span><span class="text-slate-600">rezual creates the <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">nge_2_re</span> repo</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018-01</span><span class="text-slate-600">HAR archives unpacked (<span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">hgar.py</span>); HGPT image conversion; game's own decompression run in a mini PSP interpreter</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018-02</span><span class="text-slate-600">EVS scripts &amp; data tables mapped; file replacement working</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2020</span><span class="text-slate-600">Compression identified as DEFLATE — compressor + decompressor complete</span></div>
+</div>
+</div>
+
+</div>
+
+<div>
+<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">This project · 2024 –</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-04-19</span><span class="text-slate-600">Fork of rezual's <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">nge_2_re</span></span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-04→06</span><span class="text-slate-600">Encoding-conversion functions &amp; glyph table located</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-06→09</span><span class="text-slate-600">Crowdin + DeepL, then LLM-assisted machine translation</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2025</span><span class="text-slate-600">EBOOT loader; custom encoding implemented</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-01→02</span><span class="text-slate-600">Qwen3-VL OCR for image text; contributor startup screen</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
+</div>
+<div class="pb-3 min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-06</span><span class="text-slate-600">Loader + runtime plugin architecture</span></div>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="flex flex-col items-center">
+<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-06</span><span class="text-slate-600">Memory text localized at runtime — word-order patches</span></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!--
+Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu patch proof-of-concept; 2011 text files located in the ISO (imtext.bin / btimtext.bin), Shift-JIS → UTF-8; 2018-01-07 rezual creates the nge_2_re repo; 2018-01 HAR archives unpacked (hgar.py), HGPT image conversion, and the game's own decompression run in a mini PSP interpreter; 2018-02 EVS scripts mapped and file replacement working; 2020 compression identified as DEFLATE, so compressor + decompressor both complete. Right, this project: 2024-04-19 fork of rezual's nge_2_re (this repo); 2024-04/06 encoding-conversion functions and the glyph table located; 2024-06/09 Crowdin + DeepL then LLM-assisted MT; 2025 EBOOT loader and custom encoding; 2026-01/02 Qwen3-VL OCR and the contributor startup screen; 2026-06 loader + runtime plugin architecture and runtime memory-text (word-order) patches.
+-->
+
+---
+
 # The hook point: sceFont
 
 <div class="flex items-center justify-center gap-5 mt-10">
@@ -725,158 +877,6 @@ The project is open-source and still on-going.
 | Proofreading | hanDragon20, Frykte, blabubble, Belfraw, カロモリモキナエ, Asuka, mel, Laolv000 |
 | Programming | main_void |
 | Art | main_void, Belfraw, Katsumi_Mole |
-
----
-
-# Milestones in Reverse Engineering the Game
-
-<!-- <div class="text-slate-500 mt-1 text-lg">One EvaGeeks thread on this game · 741 posts · 2006 – 2026</div> -->
-
-<div class="grid grid-cols-2 gap-x-12 mt-6">
-
-<div>
-<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">The EvaGeeks thread · 2006 –</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2010</span><span class="text-slate-600">English-menu patch proof-of-concept on a real PSP</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2011</span><span class="text-slate-600">Text files located in the ISO — <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">imtext.bin</span> / <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">btimtext.bin</span> (Shift-JIS → UTF-8)</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-20 shrink-0 font-bold text-[#3D8DFF]">2018-01-07</span><span class="text-slate-600">rezual creates the <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">nge_2_re</span> repo</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018-01</span><span class="text-slate-600">HAR archives unpacked (<span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">hgar.py</span>); HGPT image conversion; game's own decompression run in a mini PSP interpreter</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2018-02</span><span class="text-slate-600">EVS scripts &amp; data tables mapped; file replacement working</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-</div>
-<div class="min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-16 shrink-0 font-bold text-[#3D8DFF]">2020</span><span class="text-slate-600">Compression identified as DEFLATE — compressor + decompressor complete</span></div>
-</div>
-</div>
-
-</div>
-
-<div>
-<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">This project · 2024 –</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-04-19</span><span class="text-slate-600">Fork of rezual's <span class="font-mono text-[0.85em] bg-slate-100 px-1.5 py-0.5 rounded">nge_2_re</span></span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-04→06</span><span class="text-slate-600">Encoding-conversion functions &amp; glyph table located</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2024-06→09</span><span class="text-slate-600">Crowdin + DeepL, then LLM-assisted machine translation</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2025</span><span class="text-slate-600">EBOOT loader; custom encoding implemented</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-01→02</span><span class="text-slate-600">Qwen3-VL OCR for image text; contributor startup screen</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-<span class="flex-1 w-0.5 bg-[#3D8DFF]/25"></span>
-</div>
-<div class="pb-3 min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-06</span><span class="text-slate-600">Loader + runtime plugin architecture</span></div>
-</div>
-</div>
-
-<div class="flex gap-3">
-<div class="flex flex-col items-center">
-<span class="w-3 h-3 mt-1.5 rounded-full bg-[#3D8DFF] ring-4 ring-[#3D8DFF]/20 shrink-0"></span>
-</div>
-<div class="min-w-0">
-<div class="flex items-baseline gap-3 text-[0.9rem] leading-snug"><span class="w-24 shrink-0 font-bold text-[#3D8DFF]">2026-06</span><span class="text-slate-600">Memory text localized at runtime — word-order patches</span></div>
-</div>
-</div>
-
-</div>
-
-</div>
-
-<!--
-Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu patch proof-of-concept; 2011 text files located in the ISO (imtext.bin / btimtext.bin), Shift-JIS → UTF-8; 2018-01-07 rezual creates the nge_2_re repo; 2018-01 HAR archives unpacked (hgar.py), HGPT image conversion, and the game's own decompression run in a mini PSP interpreter; 2018-02 EVS scripts mapped and file replacement working; 2020 compression identified as DEFLATE, so compressor + decompressor both complete. Right, this project: 2024-04-19 fork of rezual's nge_2_re (this repo); 2024-04/06 encoding-conversion functions and the glyph table located; 2024-06/09 Crowdin + DeepL then LLM-assisted MT; 2025 EBOOT loader and custom encoding; 2026-01/02 Qwen3-VL OCR and the contributor startup screen; 2026-06 loader + runtime plugin architecture and runtime memory-text (word-order) patches.
--->
 
 
 ---
