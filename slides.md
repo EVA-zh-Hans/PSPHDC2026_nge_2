@@ -242,16 +242,20 @@ The memory slide showed the English pain with a byte-count example; Chinese tran
 
 # The usual fix: remap glyphs, keep Shift JIS
 
-<div class="mt-2 space-y-4 max-w-4xl">
+Reuse the Shift-JIS encoding byte scheme.
 
-<div class="flex items-start gap-4">
+<div class="grid grid-cols-[1fr_auto] gap-10 items-start mt-4">
+
+<div class="space-y-4">
+
+<!-- <div class="flex items-start gap-4">
 <div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">1</div>
 <div><p class="font-semibold">Reuse the Shift JIS encoding</p><p class="text-slate-500">Keep the game's original byte scheme.</p></div>
-</div>
+</div> -->
 
 <div class="flex items-start gap-4">
 <div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">2</div>
-<div><p class="font-semibold">Count the characters the translation needs</p><p class="text-slate-500">Only the used set has to fit.</p></div>
+<div><p class="font-semibold">Count the characters the translation needs</p></div>
 </div>
 
 <div class="flex items-start gap-4">
@@ -261,17 +265,41 @@ The memory slide showed the English pain with a byte-count example; Chinese tran
 
 <div class="flex items-start gap-4">
 <div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">4</div>
-<div><p class="font-semibold">Generate a new byte → character rule</p><p class="text-slate-500">A custom SJIS table for the translated set.</p></div>
+<div><p class="font-semibold">Generate a new byte → character mapping</p></div>
 </div>
 
 <div class="flex items-start gap-4">
 <div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">5</div>
-<div><p class="font-semibold">Encode the sentences, inject into the resources</p><p class="text-slate-500">The game renders Chinese without new engine support.</p></div>
+<div><p class="font-semibold">Encode the sentences, inject into the resources</p></div>
 </div>
 
 </div>
 
-<div class="mt-6 text-slate-500">That's why Chinese translations work in-game even though the original release never shipped Chinese support.</div>
+<div class="w-80 shrink-0 rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm">
+
+<div class="text-lg font-semibold text-slate-800 mb-4">Shift JIS byte ranges</div>
+
+<div class="mb-5">
+<div class="text-sm font-bold text-[#3D8DFF] mb-2">Single-byte (1B)</div>
+<div class="space-y-1.5 text-sm">
+<div class="flex items-center gap-2"><span class="font-mono px-2 py-0.5 rounded bg-slate-100 text-[13px]">00–7F</span><span class="text-slate-500">ASCII</span></div>
+<div class="flex items-center gap-2"><span class="font-mono px-2 py-0.5 rounded bg-slate-100 text-[13px]">A1–DF</span><span class="text-slate-500">half-width katakana</span></div>
+</div>
+</div>
+
+<div>
+<div class="text-sm font-bold text-[#3D8DFF] mb-2">Double-byte (2B): Kanji and Kana</div>
+<div class="space-y-1.5 text-sm">
+<div class="flex items-center gap-2"><span class="font-mono px-2 py-0.5 rounded bg-slate-100 text-[13px]">81–9F, E0–EF</span><span class="text-slate-500">lead byte</span></div>
+<div class="flex items-center gap-2"><span class="font-mono px-2 py-0.5 rounded bg-slate-100 text-[13px]">40–7E, 80–FC</span><span class="text-slate-500">trail byte</span></div>
+</div>
+</div>
+
+<div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-500 leading-relaxed">Glyphs in 2-byte range are replaced with Chinese characters.</div>
+
+</div>
+
+</div>
 
 <!--
 Walk through the five steps. The key insight: translators don't switch encodings — they rebuild the byte-to-glyph mapping inside the existing Shift JIS scheme and swap the font glyphs, so the game engine keeps working unchanged.
