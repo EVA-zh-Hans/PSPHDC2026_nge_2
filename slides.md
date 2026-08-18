@@ -226,7 +226,7 @@ For **Chinese** translations, the core problems are **encoding** and **font**:
 
 <img src="/GB2312inSJIS.png" alt="GB2312-80 character map" class="block max-h-32 rounded-lg border border-slate-200 shadow-md" />
 
-<div class="text-center text-xs text-slate-400">GB2312-80 character map, White ones are not presented in Shift-JIS</div>
+<div class="text-center text-xs text-slate-400">GB2312-80 character map, White ones are not present in Shift-JIS</div>
 
 <div class="text-sm text-slate-500 text-center max-w-xs">The characters a translation needs simply aren't in the Japanese encoding.</div>
 
@@ -254,22 +254,22 @@ Reuse the Shift-JIS encoding byte scheme.
 </div> -->
 
 <div class="flex items-start gap-4">
-<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">2</div>
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">1</div>
 <div><p class="font-semibold">Count the characters the translation needs</p></div>
 </div>
 
 <div class="flex items-start gap-4">
-<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">3</div>
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">2</div>
 <div><p class="font-semibold">Swap Japanese font glyphs for Chinese glyphs</p><p class="text-slate-500">The old character slots get new shapes.</p></div>
 </div>
 
 <div class="flex items-start gap-4">
-<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">4</div>
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">3</div>
 <div><p class="font-semibold">Generate a new byte → character mapping</p></div>
 </div>
 
 <div class="flex items-start gap-4">
-<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">5</div>
+<div class="w-10 h-10 shrink-0 rounded-full bg-[#3D8DFF] text-white font-bold flex items-center justify-center">4</div>
 <div><p class="font-semibold">Encode the sentences, inject into the resources</p></div>
 </div>
 
@@ -677,7 +677,7 @@ class: text-center
 <span class="px-2 py-1 rounded border-2 bg-amber-100 border-amber-400 text-amber-800 font-mono text-sm">myself</span>
 <span class="px-2 py-1 rounded border-2 bg-emerald-100 border-emerald-400 text-emerald-800 font-mono text-sm">hugged … tightly</span>
 </div>
-<div class="mt-2 text-center text-sm text-red-500">✗ — the object lands before the verb</div>
+<div class="mt-2 text-center text-sm text-red-500">✗ “Shinji me tightly hugged”</div>
 </div>
 
 <div class="rounded-xl border border-slate-200 bg-white p-4">
@@ -694,7 +694,7 @@ class: text-center
 <span class="px-2 py-1 rounded border-2 bg-amber-100 border-amber-400 text-amber-800 font-mono text-sm">myself</span>
 <span class="px-2 py-1 rounded border-2 bg-emerald-100 border-emerald-400 text-emerald-800 font-mono text-sm">said trivial things to …</span>
 </div>
-<div class="mt-2 text-center text-sm text-red-500">✗ — the object lands before the preposition</div>
+<div class="mt-2 text-center text-sm text-red-500">✗ “Pen Pen me, said trivial things to”</div>
 </div>
 
 </div>
