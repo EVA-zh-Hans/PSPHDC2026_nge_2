@@ -653,6 +653,8 @@ class: text-center
 
 # The problem: fixed-slot sentence templates
 
+<div class="mt-3 text-center text-sm text-slate-500">Chinese, like English, is <b>SVO</b> — the same breakage applies to the Chinese translation, shown here in English</div>
+
 <div class="flex flex-wrap justify-center gap-x-4 gap-y-1.5 mt-3 text-xs">
 <span class="px-2 py-0.5 rounded border-2 bg-blue-100 border-blue-400 text-blue-800">Subject</span>
 <span class="px-2 py-0.5 rounded border-2 bg-slate-100 border-slate-300 text-slate-600">particle</span>
