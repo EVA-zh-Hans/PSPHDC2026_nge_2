@@ -373,6 +373,52 @@ This is the game the talk's reverse-engineering project targets: the PSP release
 
 ---
 
+# The hook point: sceFont
+
+<div class="flex items-center justify-center gap-5 mt-10">
+
+<div class="text-center">
+<div class="text-xl font-semibold text-slate-700">Shift-JIS text</div>
+<div class="text-sm text-slate-400 mt-1">stored in game data</div>
+</div>
+
+<div class="text-3xl text-slate-300">→</div>
+
+<div class="text-center">
+<div class="text-xl font-bold text-[#3D8DFF]">SJIS → UTF-16</div>
+<div class="text-sm font-semibold text-[#3D8DFF] mt-1">▲ hook here</div>
+</div>
+
+<div class="text-3xl text-slate-300">→</div>
+
+<div class="text-center">
+<div class="text-xl font-semibold text-slate-700">sceFont</div>
+<div class="text-sm text-slate-400 mt-1">PSP font library renders</div>
+</div>
+
+</div>
+
+<div class="mt-12 max-w-4xl mx-auto space-y-4 text-[1.05rem] text-slate-600 leading-relaxed">
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>The game stores its text as <b>Shift-JIS</b> strings</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>PSP text rendering goes through the <b>sceFont</b> library, which consumes <b>UTF-16</b></span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span>Every draw call converts <b>SJIS → UTF-16</b> first — hook that conversion and sceFont renders whatever we feed it</span>
+</div>
+
+</div>
+
+---
+
 # Custom Shift-JIS → UTF-16 mapping
 
 <div class="text-slate-500 mt-1 text-lg">Borrowing unused code points so Chinese and Japanese can coexist</div>
