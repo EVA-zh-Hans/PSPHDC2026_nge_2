@@ -863,3 +863,15 @@ The order matters: the runtime starts before the game, so it can rewrite the gam
 <!--
 Two timelines. Left, the EvaGeeks thread's file-format RE: 2010 English-menu patch proof-of-concept; 2011 text files located in the ISO (imtext.bin / btimtext.bin), Shift-JIS → UTF-8; 2018-01-07 rezual creates the nge_2_re repo; 2018-01 HAR archives unpacked (hgar.py), HGPT image conversion, and the game's own decompression run in a mini PSP interpreter; 2018-02 EVS scripts mapped and file replacement working; 2020 compression identified as DEFLATE, so compressor + decompressor both complete. Right, this project: 2024-04-19 fork of rezual's nge_2_re (this repo); 2024-04/06 encoding-conversion functions and the glyph table located; 2024-06/09 Crowdin + DeepL then LLM-assisted MT; 2025 EBOOT loader and custom encoding; 2026-01/02 Qwen3-VL OCR and the contributor startup screen; 2026-06 loader + runtime plugin architecture and runtime memory-text (word-order) patches.
 -->
+
+---
+
+# Evangelion Games on PSP
+
+- **Done**: 
+  - [Koutetsu no Girlfriend 2nd Portable (2009)](https://github.com/EVA-zh-Hans/gos_2_re)
+  - [Tokubetsu-Hen Portable (2009)](https://github.com/EVA-zh-Hans/gos_2_re)
+  - [Secret of Evangelion Portable (2007)](https://github.com/EVA-zh-Hans/secret_of_eva)
+  - [Evangelion – Jo (2009)](https://github.com/EVA-zh-Hans/eva_jo_re)
+- **Working**: 
+  - [Shinseiki Evangelion 2 – Another Cases (2006)](https://github.com/EVA-zh-Hans/nge_2_re)
