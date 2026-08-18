@@ -559,21 +559,43 @@ class: text-center
 
 </div>
 
-<div class="mt-12 max-w-4xl mx-auto space-y-4 text-[1.05rem] text-slate-600 leading-relaxed">
+<div class="mt-10 max-w-5xl mx-auto grid grid-cols-[1.15fr_1fr] gap-8 items-center">
+
+<div class="space-y-4 text-[1.05rem] text-slate-600 leading-relaxed">
 
 <div class="flex items-start gap-3">
 <span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
-<span>The game stores its text as <b>Shift-JIS</b> strings</span>
+<span><b>Shift-JIS</b> — how the game stores text</span>
 </div>
 
 <div class="flex items-start gap-3">
 <span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
-<span>PSP text rendering goes through the <b>sceFont</b> library, which consumes <b>UTF-16</b></span>
+<span><b>UCS-2 (UTF-16)</b> — what sceFont's character APIs consume</span>
 </div>
 
 <div class="flex items-start gap-3">
 <span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
-<span>Every draw call converts <b>SJIS → UTF-16</b> first — hook that conversion and sceFont renders whatever we feed it</span>
+<span><b>PGF fonts</b> — one file can cover all 65,536 UCS-2 glyphs</span>
+</div>
+
+<div class="flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-[#3D8DFF] mt-3 shrink-0"></span>
+<span><b>SJIS → UTF-16</b> — hook the conversion: no missing glyphs, no remapping</span>
+</div>
+
+</div>
+
+<div class="rounded-2xl border border-slate-200 bg-white/80 p-4">
+
+<div class="text-xs font-bold text-[#3D8DFF] tracking-[0.2em] uppercase mb-3">sceLibFont</div>
+
+<pre class="rounded-lg bg-slate-50 border border-slate-200 p-3 text-[12px] leading-relaxed overflow-x-auto"><code class="font-mono"><span class="text-[#3D8DFF]">int</span> <span class="text-slate-800">sceFontGetCharGlyphImage</span>(
+    <span class="text-slate-600">FontHandle</span>  fontHandle,
+    <span class="text-slate-600">ushort</span>      charCode,    <span class="text-slate-500">// UCS-2: one UTF-16 code unit</span>
+    <span class="text-slate-600">GlyphImage</span> *glyphImage); <span class="text-slate-500">// out: glyph bitmap + metrics</span></code></pre>
+
+<div class="mt-3 text-[11px] text-slate-400 font-mono">PPSSPP: pspautotests/tests/font/libfont.h</div>
+
 </div>
 
 </div>
