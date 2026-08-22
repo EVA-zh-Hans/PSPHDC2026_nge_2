@@ -20,7 +20,7 @@ comark: true
 
 《新世纪福音战士2：被创造的世界》汉化
 
-xeonliux
+main_void
 
 <!--
 Open with the scale of the scene: roughly 600 PSP games fan-translated into Chinese, versus 57 English translations on romhacking.net. Most came out of the 2010s, when the PSP was the most popular handheld in China, and most are based on Japanese releases. With LLMs, more games are now being reversed and translated than ever before.
